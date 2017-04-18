@@ -15,7 +15,7 @@ The following literature has been read:
 #### <a id="literature1"></a> 1. Combining Learning with Fuzzy for Software Deobfuscation [source](http://repository.tudelft.nl/islandora/object/uuid:6282cd05-6ae3-4f39-adc7-1a45efe1ccce?collection=education)
 
 #### <a id="literature2"></a> 2. Mobile Application Security: An assessment of Bunq's financial app [source](http://repository.tudelft.nl/islandora/object/uuid%3A37e87645-09a3-4ace-b9b2-dad897292ac9?collection=education)
-Looking at the BSc. [Project code](https://github.com/bunqcom/fsm-learner), trying to make it work. Requires other applications to be installed (brew, nodeJS, Appium, maven). Configured a virtualized environment that contained these dependencies. The BSc. Project tool has 4 options:
+Looking at the BSc. [project code](https://github.com/bunqcom/fsm-learner), trying to make it work shows that other applications are required to be installed (brew, nodeJS, Appium, maven). Configured a virtualized environment that contained these dependencies. The BSc. Project tool has 4 options:
     1. _learn_
     2. _alphabet:create_
     3. _alphabet:compose_
