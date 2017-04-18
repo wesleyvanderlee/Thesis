@@ -1,2 +1,0 @@
-1. Fully understand State Machine Learning (including observation tables).
-2. Fix BSc. code.
