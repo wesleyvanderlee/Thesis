@@ -2,7 +2,7 @@
 
 The following literature has been read:
 
-1. Combining Learning with Fuzzy for Software Deobfuscation, Janssen M. et al., 2016. [source](http://repository.tudelft.nl/islandora/object/uuid:6282cd05-6ae3-4f39-adc7-1a45efe1ccce?collection=education)
+1. Combining Learning with Fuzzy for Software Deobfuscation, Janssen M. et al., 2016. [source](http://repository.tudelft.nl/islandora/object/uuid:6282cd05-6ae3-4f39-adc7-1a45efe1ccce?collection=education)[create an anchor](#anchors-in-markdown)
 2. Mobile Application Security: An assessment of bunq's financial app, Lampe, K.Q. Kraaijeveld, J.C.M. Den Braber, T.D., 2015. [source](http://repository.tudelft.nl/islandora/object/uuid%3A37e87645-09a3-4ace-b9b2-dad897292ac9?collection=education)
 3. Smetsers, Rick, et al. "Complementing Model Learning with Mutation-Based Fuzzing." arXiv preprint arXiv:1611.02429 (2016). [source](https://arxiv.org/pdf/1611.02429.pdf)
 4. De Ruiter, Joeri, and Erik Poll. "Protocol State Fuzzing of TLS Implementations." USENIX Security. Vol. 15. 2015.
@@ -12,8 +12,7 @@ The following literature has been read:
 
 ### Summaries
 
-1. Combining Learning with Fuzzy for Software Deobfuscation
-
+1. Combining Learning with Fuzzy for Software Deobfuscation 
 
 2. Mobile Application Security: An assessment of Bunq's financial app
 Looking at the BSc. [Project code](https://github.com/bunqcom/fsm-learner), trying to make it work. Requires other applications to be installed (brew, nodeJS, Appium, maven). Configured a virtualized environment that contained these dependencies. The BSc. Project tool has 4 options:
@@ -46,7 +45,7 @@ In Complementing Model Learning with Mutation-Based Fuzzing Smetsers et al. comp
 5. **Inference and abstraction of the biometric passport**
 This paper applies regular inference of state machines to the Biometric Passport. Moreover it proposes an abstraction technique to reduce alphabet and large data sets. This technique embodies the creation of a transducer between the learner and the teacher in the inference process. This transducer is created by compiling a priori data about the system under test (SUT) and maps input data to a more abstract input class. This reduced the potentially large or infinite input alphabet to a smaller and compact one, which results in less transitions and likely less state space. Validation of the infered model is done by comparing it to the model that has been developed by hand per documentation of the chip. One thing that stands out is that abstracting the model by hand took a team 5 hours while learning the model took only 1 hour. The chip limits transactions to one transaction per second in order to counteract brute forcing.
 
-6. **Interpreting Finite Automata for Sequential Data**
+6. **Interpreting Finite Automata for Sequential Data** (#anchors-in-markdown)
 This paper identifies key properties used to interpret automata and proposes a modified state-merging approach to learn variants of finite state automata. Interpretation of state automata is not feature inherent in the models or the algorithm, but is defined in the need and intention of the user. Interpretations draw from the set of properties: graphical representation, transparent computation, generative nature and the human understanding of automata theory. Machine learning serves as a tool for exploration to deal with epistemic uncertainty in observed ststems. The goal is not only to obtain a more compact view, but also to learn how to generalize from the observed data. A new algorithm for flexible state merging is introduced that seperates the symbolic representation from the objective function and heuristic, which helps stating the parameters.
 
 7. **Model learning**
