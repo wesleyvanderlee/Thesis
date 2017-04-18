@@ -20,25 +20,24 @@ Looking at the BSc. [Project code](https://github.com/bunqcom/fsm-learner), tryi
     1. Learn
     2. alphabet:create
     3. alphabet:compose
-    4. alphabet:destroy    
-Before learning can be started an alphabet must be created and composed. After inspecting the code, this has been achieved by parsing XML screens. 
-Class com.bunq.main.Main with method runAlphabetScript on line 171 invokes a bash-script (scripts/make_dump.sh)  partly responsible of the process above. The script is not present on the public repository. After observing what the script does and attempting to create one myself, I contacted one of the developers of the BSc. Project (Tom den Braber) who shared the script via e-mail. The following is the missing script:
-`
+    4. alphabet:destroy  
+
+    Before learning can be started an alphabet must be created and composed. After inspecting the code, this has been achieved by parsing XML screens. 
+    Class com.bunq.main.Main with method runAlphabetScript on line 171 invokes a bash-script (scripts/make_dump.sh)  partly responsible of the process above. The script is not present on the public repository. After observing what the script does and attempting to create one myself, I contacted one of the developers of the BSc. Project (Tom den Braber) who shared the script via e-mail. The following is the missing script:
+
+```bash
 args=($@)
- 
 FILENAME=${args[0]}
- 
 adb shell uiautomator dump
- 
 echo ${FILENAME}
- adb pull /storage/emulated/legacy/window_dump.xml alphabet/window_dumps/$FILENAME   
-`
-Note: The script was called with Java’s Runtime.exec() method. At this point I do not understand why the 2 commands listed in the bash-script weren’t executed like that, instead of running the script.
+adb pull /storage/emulated/legacy/window_dump.xml alphabet/window_dumps/$FILENAME   
+```
+    Note: The script was called with Java’s Runtime.exec() method. At this point I do not understand why the 2 commands listed in the bash-script weren’t executed like that, instead of running the script.
     
  
-A group of students also attempted to modify the code, which was documented here: https://github.com/TUDelft-CS4110/2016-sre-crew.  Asking one of the authors who would want to make the application work again, yielded nothing useful, because the modified code wasn’t present anymore. Following their fixes proposed in the final report, resulted in a large part of the application that has been bypassed and would thus not suit the purpose of making the application work for general applications. 
+    A group of students also attempted to modify the code, which was documented here: https://github.com/TUDelft-CS4110/2016-sre-crew.  Asking one of the authors who would want to make the application work again, yielded nothing useful, because the modified code wasn’t present anymore. Following their fixes proposed in the final report, resulted in a large part of the application that has been bypassed and would thus not suit the purpose of making the application work for general applications. 
  
-At this point trying to make the code work, is deemed too much of an effort with regards to the too low gain.\
+    At this point trying to make the code work, is deemed too much of an effort with regards to the too low gain.
 
 3. **Complementing Model Learning with Mutation-Based Fuzzing**   
 In Complementing Model Learning with Mutation-Based Fuzzing Smetsers et al. compare conformance testing and mutation-based fuzzing methods as a way to find counterexamples for the minimally Adequate Teacher framework. This framework results from Angluin's L* algorithm, that enables one to treat software as a black-box and learn its state model. Conformance testing establishes an equivalence relation between current hypothesis and target. This equivalence is tested with a set of test queries and if one query fails, the hypothesis is refuted and can be refined.  Mutation-based fuzzing combined with a genetic evolutionary algorithm has also been used, where the evolutionairy algorithm asserts a fitness test to the queries. In this case, code coverage has been linked to the fitness test, meaning that the more code coverage a counterexample has, the fitter it is. For different problems, linear temproal logic and reachability, different fuzzing and model learning yield partially complementary results, which leads to believe that these orthogonal approaches aid each other.
