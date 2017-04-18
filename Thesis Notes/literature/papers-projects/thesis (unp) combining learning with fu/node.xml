@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title</key><string>Thesis (unp): Combining Learning with Fuzzy for Software Deobfuscation, Janssen M.</string>
+  <key>nodeid</key><string>2fe98a1e-43a3-47ea-8665-e0cb4781fbea</string>
+  <key>modified_time</key><integer>1491462955</integer>
+  <key>version</key><integer>6</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1491462955</integer>
+  <key>info_sort_dir</key><integer>1</integer>
+  <key>order</key><integer>1</integer>
+  <key>info_sort</key><string>order</string>
+</dict>
+</node>

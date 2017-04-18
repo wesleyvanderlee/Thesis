@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>BSc Project</title>
+</head><body><span style="font-size: 10pt">Looking at the BSc. Project code (<a href="https://github.com/bunqcom/fsm-learner">https://github.com/bunqcom/fsm-learner</a>), trying to make it work. Requires other applications to be installed (brew, nodeJS, Appium, maven). Configured a virtualized environment that contained these dependencies. The BSc. Project tool has 4 options:</span><br/>
+&nbsp; &nbsp; 1. Learn<br/>
+&nbsp; &nbsp; 2. alphabet:create<br/>
+&nbsp; &nbsp; 3. alphabet:compose<br/>
+&nbsp; &nbsp; 4: alphabet:destroy<br/>
+<br/>
+&nbsp;<br/>
+<span style="font-size: 10pt">Before learning can be started an alphabet must be created and composed. After inspecting the code, this has been achieved by parsing XML screens. </span><br/>
+<span style="font-size: 10pt">Class com.bunq.main.Main with method <i>runAlphabetScript</i>&nbsp;on line 171 invokes a bash-script (scripts/make_dump.sh)  partly responsible of the process above. The script is not present on the public repository. After observing what the script does and attempting to create one myself, I contacted one of the developers of the BSc. Project (Tom den Braber) who shared the script via e-mail. The following is the missing script:</span><br/>
+<br/>
+&nbsp;<br/>
+<span style="font-size: 10pt"><i>Note: The script was called with Java’s Runtime.exec() method. At this point I do not understand why the 2 commands listed in the bash-script weren’t executed like that, instead of running the script.</i></span><br/>
+&nbsp; &nbsp; <br/>
+&nbsp;<br/>
+<span style="font-size: 10pt">A group of students also attempted to modify the code, which was documented here: <a href="https://github.com/TUDelft-CS4110/2016-sre-crew">https://github.com/TUDelft-CS4110/2016-sre-crew</a>.  Asking one of the authors who would want to make the application work again, yielded nothing useful, because the modified code wasn’t present anymore. Following their fixes proposed in the final report, resulted in a large part of the application that has been bypassed and would thus not suit the purpose of making the application work for general applications. </span><br/>
+&nbsp;<br/>
+<span style="font-size: 10pt">At this point trying to make the code work, is deemed too much of an effort with regards to the too low gain.</span><br/>
+&nbsp; &nbsp; </body></html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Angluin, 1987</title>
+</head><body><span style="font-size: 12pt">Angluin, Dana. "Learning regular sets from queries and counterexamples." <i>Information and computation</i> 75.2 (1987): 87-106.<br/>
+<br/>
+A minimally adequate teacher is assumed to answer correctly two types of questions from the learner about the unknown regular set.<ul><li style="list-style-type: none">1.&#09;Membership Queries</li>
+<li style="list-style-type: none">&nbsp;&#09;&#09;whether a string is a member of the unknown set or not.</li>
+<li style="list-style-type: none">2.&#09;Conjecture (=vermoeden)</li>
+<li style="list-style-type: none">&nbsp;&#09;&#09;whether a description of a regular set S, yes if S is equal to the unknown language or is a counterexample in the symmetric difference of S ad the unknown language.&#09;</li>
+<li style="list-style-type: none"></li>
+</ul>
+Algorithm: L*<br/>
+Let the unknown regular set be denoted by U and assume that it is over a fixed known finite alphabet A.<br/>
+<br/>
+L* has always information about a finite collection of strings over A, classifying them as members or nonmembers of U. This can be organized into an <b>observation table</b>&nbsp;containing three strings: <ul><li style="list-style-type: none">1. Non-empty finite prefix-closed (prefix-closed= each prefix of each member is also a member of the set) set S of strings</li>
+<li style="list-style-type: none">2. Non-empty finite suffix-closed (suffix-closed= each suffix of each member is also a member of the set) &nbsp;set E of strings</li>
+<li style="list-style-type: none">3. Finite function T mapping ((S || S*A) *E) to {0,1}. , is 1 iff u is a member of U. Initially S=E={labda}</li>
+<li style="list-style-type: none">-&gt; Observation table is denoted (S,E,T)</li>
+</ul>
+<br/>
+<br/>
+<i>In Progress</i><br/>
+</span></body></html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Complementing Model Learning with mutation-based fuzzing</title>
+</head><body>Smetsers, Rick, et al. "Complementing Model Learning with Mutation-Based Fuzzing." <i>arXiv preprint arXiv:1611.02429</i> (2016).<br/>
+https://arxiv.org/pdf/1611.02429.pdf<br/>
+<br/>
+<br/>
+Paper compares and combines conformance testing and mutation-based fuzzing methods for obtaining counterexamples when learning finite state machine models.<br/>
+<b><u>Angluins' L-star</u></b><u>:</u><br/>
+Learning can be done with a <b>Minimally Adequate Teacher</b>&nbsp;answers to type of queries<b>:</b><ul><li><i>-Membership query</i>: learner asks for systemś output in response to a sequence of inputs, learner uses set of queries to construct a hypothesis.</li>
+<li>-<i>Equivalence query: </i>learner asks if its hypothesis is equivalent to the target. If this is not the case, the teacher provides a <i>counterexample</i>, which is an input sequence that distinguishes the hypothesis and the target. Counterexample is used to refine.</li>
+</ul>
+<br/>
+<b>Real challenge: find good counterexamples.</b><br/>
+Techniques for finding counterexamples:<ul><li>-Conformance testing. Establish an equivalence relation between current hypothesis and target. Posing test queries, if response between hypothesis and target is the same </li>
+<li style="list-style-type: none"><ul><li>-&gt; hypothesis is assumed to be correct. Else -&gt; counterexample</li>
+</ul>
+</li>
+<li>-Mutation-based fuzzing; applies a test to a target program and iteratively modifies input test to monitor whether something interesting happens.</li>
+<li>-Mutation-based fuzzing combined with a genetic (evolutionary) algorithm. Requires a fitness function to evaluate the performance of newly generated test queries.</li>
+<li style="list-style-type: none"><ul><li>- fitness test is based on what code is executed for a certain test query.</li>
+<li>- fittest test case is used as a source for mutation-based fuzzing.</li>
+</ul>
+</li>
+<li></li>
+<li></li>
+</ul>
+<b>TTT </b>is a novel model learning algorithm.<br/>
+Distinguished by its redundancy-free handling of counterexamples. TTT maintains a prefix-closed set S of access sequences to states.States correspond to leaves of a <i>discrimination tree</i>&nbsp;in which the inner nodes are labeled with elements from a suffic closed set of discriminators E and its transitions are labeled with an output.<br/>
+<b><br/>
+AFL<br/>
+</b>Coverage has been measured with a bitmap. With coverage information from AFL. AFL also decides on the fittest case. <br/>
+AFL has an engine to generate new test cases,mutating techniques are: ordered bit flips, extension of bit flips, simple arithmetic, overwriting integers, etc.<br/>
+Mutation branch created with a fork server. <br/>
+<br/>
+<b>LearnLib<br/>
+</b>Algorithm: TTT, because it scales up to larger systems under learning.<br/>
+Testing algorith: Modified version of Wp method.<ul><li style="list-style-type: none">Wp in principle generates a test suite whose size is polynomial in the size of the hypothesis and exponential in the upper bound of states.</li>
+<li style="list-style-type: none">Modification, randomly sample (uniformly over state-cover set, then random generates an infix over all inputs according to a geometric distribution) test sequences until it finds a counterexaple.</li>
+</ul>
+Counterexample handling: using LinearForward handler in LearnLib.<br/>
+Cache: Learnlibś cache was enabled.<br/>
+<br/>
+<b>AFL Fuzzing<br/>
+</b>afl-gcc compiler<br/>
+input alphabet: valid inputs<br/>
+Error handling: <br/>
+<br/>
+<b>Present and Future Work<br/>
+</b>Ways to combine model learning and mutation-based fuzzing:<ul><li style="list-style-type: none">1. &#09;Use fuzzing as a source of counterexamples during learning</li>
+<li style="list-style-type: none">2.&#09;Use learning results to guide mutation-based fuzzing</li>
+<li style="list-style-type: none"></li>
+</ul>
+<br/>
+---<br/>
+<b>Summary<br/>
+</b>In Complementing Model Learning with Mutation-Based Fuzzing Smetsers et al. compare conformance testing and mutation-based fuzzing methods as a way to find counterexamples for the Minimally Adequate Teacher framework. This framework results from Angluin's L* algorithm, that enables one to treat software as a black-box and learn its state model. <ul>Conformance testing establishes an equivalence relation between current hypothesis and target. This equivalence is tested with a set of test queries and if one query fails, the hypothesis is refuted and can be refined.<ul>&nbsp;</ul>
+Mutation-based fuzzing combined with a genetic evolutionary algorithm has also been used, where the evolutionairy algorithm asserts a fitness test to the queries. In this case, code coverage has been linked to the fitness test, meaning that the more code coverage a </ul>
+counterexample has, the fitter it is. For different problems, linear temproal logic and reachability, different fuzzing and model learning yield partially complementary results, which leads to believe that these orthogonal approaches aid each other.<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<ul><li></li>
+</ul>
+</body></html>

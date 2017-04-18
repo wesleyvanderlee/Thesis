@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Inference and Abstraction of the Biometric Passport</title>
+</head><body><span style="font-size: 12pt">Aarts, Fides, Julien Schmaltz, and Frits Vaandrager. "Inference and abstraction of the biometric passport." <br/>
+<br/>
+Proposes an abstraction technique to reduce alphabet and large data sets.<br/>
+By extracting a priori knowledge about the teacher (from informal documentation or requirements), use this to define equivalence classes and used to define a new and reduced alphabet.<br/>
+<br/>
+<b>Introduction</b><br/>
+Learning techniques can be used to automatically create a model from an existing implementation. The regular inference algorithms provide sequences of inputs, called membership queries, to a system and observe its response. In addition, equivalence queries check whether the procedure is completed. Two issues:<br/>
+&nbsp; 1. time to learn grows very fast with input alphabet size<br/>
+&nbsp; 2. automatically learned models are very hard to read.<br/>
+<br/>
+This paper extracts first a priori knowledge from documentation and interviews. Validation is done by comparison with a hand-made specification of the passport.<br/>
+<br/>
+<b>Overview</b><br/>
+Goal: Learn a SUT (=Biometric passport) with components <i>Learner</i>&nbsp;(LearnLib), <i>Teacher </i>(SUT) and intermediate layer <i>Abstraction mapping.<br/>
+</i>Validation is done with testing relation <i>ioco</i>, inside JTorX<br/>
+<br/>
+<b>Inference and Abstraction of Mealy Machines<br/>
+</b>Extension of L*. There is a teacher who knows a behavior determenistic Mealy Machine M and a learner who has no knowledge about M, except for its sets I and O (input and output alphabet) Learner can ask two types of queries:<br/>
+&nbsp; 1. membership query. <br/>
+&nbsp;&#09;asking what the response is to an input string u \in I*. Teacher answers output s \in O*.<br/>
+&nbsp; 2. equivalence query.<br/>
+&nbsp;&#09;asking whether hypothesized machine H is correct. Teacher answers either yes or supplies a counterexample that produces a different output string for both automata.<br/>
+<br/>
+<i><b>Core</b></i><br/>
+To make learning feasible, a <b>transducer </b>is placed between Learner and SUT, which transforms large input domain M into small ones. The combined behavior of the <b>SUT and the transducer</b>&nbsp;can be described by machine Ma, which has a smaller alphabet and a smaller state space.<br/>
+<br/>
+A priori knowledge: three types of files, <ul><li style="list-style-type: none">1. Files readable after valid BAC (Basic Authentication Control)</li>
+<li style="list-style-type: none">2. Files readable after valid EAC (Extended Access Control)</li>
+</ul>
+<br/>
+3. Files that are never to be accessed. &nbsp;<i>Why put them on the chip?</i><ul><li style="list-style-type: none">--&gt; Abstraction mapping = randomly chosing an element within the corresponding equivalence class.</li>
+<li style="list-style-type: none"></li>
+</ul>
+<b>Results<br/>
+</b>With transducer, much less transitions.<br/>
+Finding: Although passport specification denoted that behavior should be determenistic, learner crashed due to undetermenistic results. Could not identify the source. Found correlation with Mostowski et al.<br/>
+The learned model Ha was not equivalent to Ma, neither was the alphabet.<i><br/>
+</i><br/>
+Note: transducer has been applied in the BSc. Project, when defining the alphabet.<br/>
+---<br/>
+<b>Summary<br/>
+</b>This paper applies regular inference of state machines to the Biometric Passport. Moreover it proposes an abstraction technique to reduce alphabet and large data sets. This technique embodies the creation of a transducer between the learner and the teacher in the inference process. This transducer is created by compiling a priori data about the system under test (SUT) and maps input data to a more abstract input class. This reduced the potentially large or infinite input alphabet to a smaller and compact one, which results in less transitions and likely less state space. Validation of the infered model is done by comparing it to the model that has been developed by hand per documentation of the chip. One thing that stands out is that abstracting the model by hand took a team 5 hours while learning the model took only 1 hour. The chip limits transactions to one transaction per second in order to counteract brute forcing.<br/>
+<br/>
+</span></body></html>

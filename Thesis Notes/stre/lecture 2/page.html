@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lecture 2</title>
+</head><body><span style="font-size: 12pt">&nbsp;<br/>
+<b>28-3 [STRE-16 Lecture 2]</b><br/>
+&nbsp;<br/>
+Computational complexity notions: NP, NP-hard, NP-complete and Undecidable <br/>
+Learning theory: Field that studies learning problems, or how to find a model for data<br/>
+&nbsp;<br/>
+Learning algorithm is an algorithm that given a dataset, produces a model. And then there are complexities involved: how difficult is it to find the smallest possible model and can we find the model that is provably close to the one that generates the data.<br/>
+&nbsp; &nbsp; <br/>
+&nbsp;<br/>
+<b>Learning in the limit</b>&nbsp;[general for any machine learning algorithm] -&gt; Studies learning from infinite data<br/>
+Views learning as an ongoing process<br/>
+&nbsp; &nbsp; 1. Learner recieves some data from a target concept C<br/>
+&nbsp; &nbsp; 2. Updates its hypothesis H, then goes to 1<br/>
+Is only successful if it converges:<ul><li style="list-style-type: none">L(H) = L(C) at some point in time t</li>
+<li style="list-style-type: none">AND L(H) = L(C) at all points &gt; t</li>
+<li style="list-style-type: none">--&gt; Learner does not need to know when it converges</li>
+</ul>
+&nbsp;<br/>
+Learning DFAs from labeled data<br/>
+Input: labeled data, positive and negative traces <br/>
+Goal: Find the smallest DFA that is consistent with the data <br/>
+Occam’s razor: among competing hypothesis, the one with the fewest assumptions should be selected. <br/>
+&nbsp;<br/>
+<b>Theorem: DFAs cannot be learned in the limit from unlabeled data!</b>&nbsp;<ul><li style="list-style-type: none">Limit learners should at some point coverge to C </li>
+<li style="list-style-type: none">{a,b}* contains all finite languages over {a,b} </li>
+<li style="list-style-type: none">Suppose a learner converges to {a,b}* at some point. </li>
+<li style="list-style-type: none">At that point, the learner has seen a finite data set D </li>
+<li style="list-style-type: none">D is a finite language </li>
+<li style="list-style-type: none">The learner can never converge to D </li>
+<b><li style="list-style-type: none">-&gt; Contradiction</li>
+</b></ul>
+<b><br/>
+Myhill-Nerode <br/>
+</b>A necessary and sufficient condition iff for a language to be regular<ul><li>Characterizes when finite state machines exist</li>
+<li>Used for learning state machines<b></b></li>
+</ul>
+<b>Pumping Lemma </b>proofs a language is not regular (cannot proof a language is regular)<br/>
+</span><span style="font-size: 13pt">Given a language L, and a pair of strings x and y, define a distinguishing extension to be a string z such that exactly one of the two strings xz and yz belong to L. <br/>
+Define a relation R on the strings by the rule that<i>&nbsp;x R y</i>&nbsp;if there is no distinguishing extension for x and y. <br/>
+It is easy to show that R is an equivalence relation. <br/>
+L is regular if and only if R has a finite number of equivalence classes (sets of R-equivalent strings). <br/>
+Moreover, the number of states of the smallest deterministic finite state automaton recognizing L is equal to the number of equivalence classes in R. &nbsp; <br/>
+<br/>
+</span><span style="font-size: 13pt">This creates a <b>Hankell matrix</b>, where different rows are given different colors. Access strings and one-letter extensions provide sufficient information.</span><span style="font-size: 12pt"><br/>
+</span><span style="font-size: 12pt"><i><br/>
+</i>Hankell matrix with insufficient data, doesn work with the algorithm, because it will create inconsistent states.<br/>
+Solution, <b>active learning with L*<br/>
+</b>Aims to discover: <ul><li>access strings, smallest strings for every color</li>
+<li>one-letter extensions</li>
+<li>distinguishing suffixes</li>
+</ul>
+Maintains a distinguishing table (subset of Hankell matrix)<br/>
+<b>Algorithm</b><br/>
+1. Initialize the distinguishing table T <br/>
+2. Complete T until it defines a state machine M <br/>
+3. While( Eq(M) gives a counterexample c ) <br/>
+&nbsp; &nbsp;1. Use Mem() and c to find a new distinguishing extension d <br/>
+&nbsp; &nbsp;2. Add d to T <br/>
+&nbsp; &nbsp;3. Complete T until it defines a state machine M &nbsp; <br/>
+<i><br/>
+</i><b>LearnLib<br/>
+</b>Main trick: create mapper<i><br/>
+</i><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<b><br/>
+<br/>
+</b><br/>
+&nbsp; &nbsp; </span></body></html>

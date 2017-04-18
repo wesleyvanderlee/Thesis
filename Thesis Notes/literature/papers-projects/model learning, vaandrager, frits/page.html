@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Model learning, Vaandrager, Frits</title>
+</head><body>Vaandrager, Frits. "Model learning." Communications of the ACM 60.2 (2017): 86-95.<br/>
+<br/>
+People routinely learn the behavior of devices or systems. Through experiments a mental model is created in which global states the device can be and which state transitions an outputs occur in response to which inputs. Model learning is about the design and application of algorithms that perform this task. <br/>
+<br/>
+State machine learning has different names<ul><li style="list-style-type: none">:</li>
+<li>system identification (by control theorists)</li>
+<li>grammatical inference (by computation linguists)</li>
+<li>regular inference</li>
+<li>regular extrapolation</li>
+<li>active automata learning</li>
+<li></li>
+</ul>
+Angluin proposed learning with the Minimally Adequate Teacher (MAT) algorithm.<br/>
+In MAT: Learning is viewed as a game in which a learner has to infer the behavior of an unknown state diagram by asking queries to the teacher. Initially, learner only knows inputs I and outputs O of M. Task for learner is to learn M through two types of queries:<br/>
+&nbsp;&#09;Membership queries (MQ) learner asks what output is in response to an input sequence rho \in I*. Teacher answers with output sequence Am(rho)<ul><li style="list-style-type: none">Equivalence queries (EQ) learner asks if hypothesized Mealy machine H with inputs I and outputs O is correct, that is whether H and M are equivalent. Teacher answers yes or a counterexample rho \in I* that distinguishes H and M.</li>
+</ul>
+L* algorithm of Angluin is able to learn &nbsp;by asking a polynomial number of membership and equivalence queries<ul><li style="list-style-type: none">[POLYNOMIAL IN the size of the canonical Mealy machine]</li>
+<li style="list-style-type: none"></li>
+</ul>
+<b>Angluin's L*<br/>
+</b>The L* algorithm incrementally constructs an observation table with entries taken from the set O of outputs. The rows are labeled by words in S \union S . I, where S is a nonempty finite prefix-closed language and the columns by a nonempty finite suffic closed language E. Formally, an observation table is a triple (S,E,row) where row: S \union (S.I) -&gt; (E-&gt;O). For a given prefix w and suffix e, row(w,e) returns the last output produced by the SUL in response to the membership query <i>we. </i>&nbsp;Initially, S only contains the empty word <i>empty</i>&nbsp;and E equals the set of Inputs I. Two crucial properties of the observation table allow for the construction of a Mealy machine: closedness and consistency.<ul><li style="list-style-type: none"></li>
+<li>&#09;</li>
+</ul>
+</body></html>
