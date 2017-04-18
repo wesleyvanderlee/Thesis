@@ -17,10 +17,10 @@ The following literature has been read:
 
 2. Mobile Application Security: An assessment of Bunq's financial app
 Looking at the BSc. [Project code](https://github.com/bunqcom/fsm-learner), trying to make it work. Requires other applications to be installed (brew, nodeJS, Appium, maven). Configured a virtualized environment that contained these dependencies. The BSc. Project tool has 4 options:
-    1. Learn
-    2. alphabet:create
-    3. alphabet:compose
-    4. alphabet:destroy  
+    1. _learn_
+    2. _alphabet:create_
+    3. _alphabet:compose_
+    4. _alphabet:destroy_ 
 
     Before learning can be started an alphabet must be created and composed. After inspecting the code, this has been achieved by parsing XML screens. 
     Class com.bunq.main.Main with method runAlphabetScript on line 171 invokes a bash-script (scripts/make_dump.sh)  partly responsible of the process above. The script is not present on the public repository. After observing what the script does and attempting to create one myself, I contacted one of the developers of the BSc. Project (Tom den Braber) who shared the script via e-mail. The following is the missing script:
@@ -33,7 +33,6 @@ echo ${FILENAME}
 adb pull /storage/emulated/legacy/window_dump.xml alphabet/window_dumps/$FILENAME   
 ```
     Note: The script was called with Java’s Runtime.exec() method. At this point I do not understand why the 2 commands listed in the bash-script weren’t executed like that, instead of running the script.
-    
  
     A group of students also attempted to modify the code, which was documented here: https://github.com/TUDelft-CS4110/2016-sre-crew.  Asking one of the authors who would want to make the application work again, yielded nothing useful, because the modified code wasn’t present anymore. Following their fixes proposed in the final report, resulted in a large part of the application that has been bypassed and would thus not suit the purpose of making the application work for general applications. 
  
