@@ -14,13 +14,13 @@
 + RQ3: How can we apply fuzzing and learning on Android applications in a time-feasible way?
 
 #### RQ1
-	How to define a state (UI-wise)
-	How to define equivalence (in case of dynamic representation), some scrape the UI-a-hrefs. 
+How to define a state (UI-wise)
+How to define equivalence (in case of dynamic representation), some scrape the UI-a-hrefs. 
 
 #### RQ2
-	Leads to the following model: 
-	![Proposal Setup Diagram](https://github.com/wesleyvanderlee/Thesis/raw/master/Proposal/Proposal%20Setup.png)
+Leads to the following model: 
+![Proposal Setup Diagram](https://github.com/wesleyvanderlee/Thesis/raw/master/Proposal/Proposal%20Setup.png)
 
 
 #### RQ3
-	Should be fast enough.
+Should be fast enough.
