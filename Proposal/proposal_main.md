@@ -19,7 +19,7 @@
 
 #### RQ2
 	Leads to the following model: 
-	![Proposal Setup Diagram](Proposal Setup.png "Proposal Setup Diagram")
+	![Proposal Setup Diagram](https://github.com/wesleyvanderlee/Thesis/raw/master/Proposal/Proposal%20Setup.png)
 
 
 #### RQ3
