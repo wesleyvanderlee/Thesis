@@ -9,8 +9,10 @@ The following literature has been read:
 5. [Aarts, Fides, Julien Schmaltz, and Frits Vaandrager. "Inference and abstraction of the biometric passport." Leveraging Applications of Formal Methods, Verification, and Validation (2010): 673-686.](#literature5)
 6. [Hammerschmidt, Christian Albert, et al. "Interpreting Finite Automata for Sequential Data." arXiv preprint arXiv:1611.07100 (2016).](#literature6)
 7. [Vaandrager, Frits. "Model learning." Communications of the ACM 60.2 (2017): 86-95.](#literature7)
+8. [Choi, Wontae, George Necula, and Koushik Sen. "Guided gui testing of android apps with minimal restart and approximate learning." ACM SIGPLAN Notices. Vol. 48. No. 10. ACM, 2013.](#literature8)
 
 ### Summaries
+_Status: Yet to summarize_
 
 #### <a id="literature1"></a> 1. Combining Learning with Fuzzy for Software Deobfuscation [source](http://repository.tudelft.nl/islandora/object/uuid:6282cd05-6ae3-4f39-adc7-1a45efe1ccce?collection=education)
 
@@ -50,3 +52,7 @@ This paper applies regular inference of state machines to the Biometric Passport
 This paper identifies key properties used to interpret automata and proposes a modified state-merging approach to learn variants of finite state automata. Interpretation of state automata is not feature inherent in the models or the algorithm, but is defined in the need and intention of the user. Interpretations draw from the set of properties: graphical representation, transparent computation, generative nature and the human understanding of automata theory. Machine learning serves as a tool for exploration to deal with epistemic uncertainty in observed systems. The goal is not only to obtain a more compact view, but also to learn how to generalize from the observed data. A new algorithm for flexible state merging is introduced that separates the symbolic representation from the objective function and heuristic, which helps stating the parameters.
 
 ####  <a id="literature7"></a> 7. Model learning
+_Status: Yet to summarize_
+
+####  <a id="literature8"></a> 8. Guided gui testing of android apps with minimal restart and approximate learning
+_Status: Yet to read_
