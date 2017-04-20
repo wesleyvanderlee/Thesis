@@ -6,7 +6,7 @@ The following literature has been read:
 2. [Mobile Application Security: An assessment of bunq's financial app, Lampe, K.Q. Kraaijeveld, J.C.M. Den Braber, T.D., 2015. ](#literature2)
 3. [Smetsers, Rick, et al. "Complementing Model Learning with Mutation-Based Fuzzing." arXiv preprint arXiv:1611.02429 (2016). ](#literature3)
 4. [De Ruiter, Joeri, and Erik Poll. "Protocol State Fuzzing of TLS Implementations." USENIX Security. Vol. 15. 2015.](#literature4)
-5. [Aarts, Fides, Julien Schmaltz, and Frits Vaandrager. "Inference and abstraction of the biometric passport." ](#literature5)
+5. [Aarts, Fides, Julien Schmaltz, and Frits Vaandrager. "Inference and abstraction of the biometric passport." Leveraging Applications of Formal Methods, Verification, and Validation (2010): 673-686.](#literature5)
 6. [Hammerschmidt, Christian Albert, et al. "Interpreting Finite Automata for Sequential Data." arXiv preprint arXiv:1611.07100 (2016).](#literature6)
 7. [Vaandrager, Frits. "Model learning." Communications of the ACM 60.2 (2017): 86-95.](#literature7)
 
@@ -19,9 +19,9 @@ Looking at the BSc. [project code](https://github.com/bunqcom/fsm-learner), tryi
     1. _learn_
     2. _alphabet:create_
     3. _alphabet:compose_
-    4. _alphabet:destroy_ 
+    4. _alphabet:destroy_
 
-Before learning can be started an alphabet must be created and composed. After inspecting the code, this has been achieved by parsing XML screens. 
+Before learning can be started an alphabet must be created and composed. After inspecting the code, this has been achieved by parsing XML screens.
 Class com.bunq.main.Main with method runAlphabetScript on line 171 invokes a bash-script (scripts/make_dump.sh)  partly responsible of the process above. The script is not present on the public repository. After observing what the script does and attempting to create one myself, I contacted one of the developers of the BSc. Project (Tom den Braber) who shared the script via e-mail. The following is the missing script:
 
 ```bash
@@ -32,9 +32,9 @@ echo ${FILENAME}
 adb pull /storage/emulated/legacy/window_dump.xml alphabet/window_dumps/$FILENAME   
 ```
 Note: The script was called with Java’s Runtime.exec() method. At this point I do not understand why the 2 commands listed in the bash-script weren’t executed like that, instead of running the script.
- 
-A group of students also attempted to modify the code, which was documented here: https://github.com/TUDelft-CS4110/2016-sre-crew.  Asking one of the authors who would want to make the application work again, yielded nothing useful, because the modified code wasn’t present anymore. Following their fixes proposed in the final report, resulted in a large part of the application that has been bypassed and would thus not suit the purpose of making the application work for general applications. 
- 
+
+A group of students also attempted to modify the code, which was documented here: https://github.com/TUDelft-CS4110/2016-sre-crew.  Asking one of the authors who would want to make the application work again, yielded nothing useful, because the modified code wasn’t present anymore. Following their fixes proposed in the final report, resulted in a large part of the application that has been bypassed and would thus not suit the purpose of making the application work for general applications.
+
 At this point trying to make the code work, is deemed too much of an effort with regards to the too low gain.
 
 #### <a id="literature3"></a> 3. Complementing Model Learning with Mutation-Based Fuzzing [source](https://arxiv.org/pdf/1611.02429.pdf)
