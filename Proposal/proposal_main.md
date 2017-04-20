@@ -23,7 +23,9 @@ How to define equivalence (in case of dynamic representation), some scrape the U
 
 #### RQ2
 Leads to the following model:
+
 ![Proposal Setup Diagram](Proposal Setup.png "Proposal Setup Diagram")
+
 Figure 1.
 
 EMMA needs to be configured into the application's manifest, in order to enable the code coverage function based on app behavior. From two perspectives this may be possible, during:
