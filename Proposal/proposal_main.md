@@ -50,5 +50,7 @@ Test this on an application where the state can also be manually be inferred. Ve
 
 ## References
 [1] De Ruiter, Joeri, and Erik Poll. "Protocol State Fuzzing of TLS Implementations." USENIX Security. Vol. 15. 2015.
+
 [2] Aarts, Fides, Julien Schmaltz, and Frits Vaandrager. "Inference and abstraction of the biometric passport." Leveraging Applications of Formal Methods, Verification, and Validation (2010): 673-686.
+
 [3] Mobile Application Security: An assessment of bunq's financial app, Lampe, K.Q. Kraaijeveld, J.C.M. Den Braber, T.D., 2015.
