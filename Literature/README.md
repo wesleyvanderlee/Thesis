@@ -10,11 +10,13 @@ The following literature has been read:
 6. [Hammerschmidt, Christian Albert, et al. "Interpreting Finite Automata for Sequential Data." arXiv preprint arXiv:1611.07100 (2016).](#literature6)
 7. [Vaandrager, Frits. "Model learning." Communications of the ACM 60.2 (2017): 86-95.](#literature7)
 8. [Choi, Wontae, George Necula, and Koushik Sen. "Guided gui testing of android apps with minimal restart and approximate learning." ACM SIGPLAN Notices. Vol. 48. No. 10. ACM, 2013.](#literature8)
+9. [Angluin, Dana. "Learning regular sets from queries and counterexamples." Information and computation 75.2 (1987): 87-106.](#literature9)
 
 ### Summaries
-_Status: Yet to summarize_
+
 
 #### <a id="literature1"></a> 1. Combining Learning with Fuzzy for Software Deobfuscation [source](http://repository.tudelft.nl/islandora/object/uuid:6282cd05-6ae3-4f39-adc7-1a45efe1ccce?collection=education)
+_Status: Yet to summarize_
 
 #### <a id="literature2"></a> 2. Mobile Application Security: An assessment of Bunq's financial app [source](http://repository.tudelft.nl/islandora/object/uuid%3A37e87645-09a3-4ace-b9b2-dad897292ac9?collection=education)
 Looking at the BSc. [project code](https://github.com/bunqcom/fsm-learner), trying to make it work shows that other applications are required to be installed (brew, nodeJS, Appium, maven). Configured a virtualized environment that contained these dependencies. The BSc. Project tool has 4 options:
@@ -56,3 +58,6 @@ _Status: Yet to summarize_
 
 ####  <a id="literature8"></a> 8. Guided gui testing of android apps with minimal restart and approximate learning
 _Status: Yet to read_
+
+####  <a id="literature9"></a> 9. Learning regular sets from queries and counterexamples
+_Status: Yet to summarize_
