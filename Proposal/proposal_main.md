@@ -16,24 +16,24 @@ See the documentation [here](Literature/README.md).
 + RQ3: How can we apply fuzzing and learning on Android applications in a time-feasible way?
 
 #### RQ1
-	How to define a state (UI-wise)?
-		I.e. scrape frames, links, etc. Based on layout alone?
-		How does this follow from the relevant literature?
-	How to define equivalence (in case of dynamic representation), some scrape the UI-a-hrefs. Depends on how the state is defined.
+How to define a state (UI-wise)?
+	+ I.e. scrape frames, links, etc. Based on layout alone?
+	+ How does this follow from the relevant literature?
+How to define equivalence (in case of dynamic representation), some scrape the UI-a-hrefs. Depends on how the state is defined.
 
 #### RQ2
-	Leads to the following model:
-	![Proposal Setup Diagram](Proposal Setup.png "Proposal Setup Diagram")
-	Figure 1.
+Leads to the following model:
+![Proposal Setup Diagram](Proposal Setup.png "Proposal Setup Diagram")
+Figure 1.
 
-	EMMA needs to be configured into the application's manifest, in order to enable the code coverage function based on app behavior. From two perspectives this may be possible, during:
-		+ app development.
-		+ app decompile, change the manifest, recompile.
+EMMA needs to be configured into the application's manifest, in order to enable the code coverage function based on app behavior. From two perspectives this may be possible, during:
+	+ app development.
+	+ app decompile, change the manifest, recompile.
 
 #### RQ3
-	Using speed-up mechanisms.
-		Smarter learning algorithm.
-		Fuzz- and test-case selection, etc.
+Using speed-up mechanisms.
+	Smarter learning algorithm.
+	Fuzz- and test-case selection, etc.
 
 ## Methodology
 A process for inferring state machines of Android applications shall be developed and a proof of concept tool shall be developed accordingly. The process and the tool must adhere to a 'smart' learning process, meaning the process adheres to the correctness and time-feasibility requirements. The research project refines to the following research tasks:
