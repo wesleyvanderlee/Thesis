@@ -24,7 +24,7 @@ How to define equivalence (in case of dynamic representation), some scrape the U
 #### RQ2
 Leads to the following model:
 
-![Proposal Setup Diagram](Proposal Setup.png "Proposal Setup Diagram")
+![Proposal Setup Diagram](https://github.com/wesleyvanderlee/Thesis/blob/master/Proposal/Proposal%20Setup.png)
 
 Figure 1.
 
