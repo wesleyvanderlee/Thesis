@@ -1,5 +1,5 @@
 # Thesis Repository
-Thesis Repository for the MSc. Final Year Project from Wesley van der Lee, Delft University of Technology and KPMG the Netherlands.
+Thesis Repository for the MSc. Final Year Project from Wesley van der Lee.
 
 ### Research Proposal 
 Note: Commencing/Inconclusive/~~Final~~  
