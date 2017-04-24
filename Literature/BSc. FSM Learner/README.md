@@ -5,7 +5,7 @@
 
 + [STRE group to make it work](https://github.com/TUDelft-CS4110/2016-sre-crew)
 
-+ [missing script](Literature/BSc. FSM Learner/make_dump.sh)
++ [missing script](https://github.com/wesleyvanderlee/Thesis/blob/master/Literature/BSc.%20FSM%20Learner/make_dump.sh)
 
 ## Actions
 
