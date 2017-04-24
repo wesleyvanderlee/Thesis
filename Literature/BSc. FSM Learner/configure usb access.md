@@ -2,7 +2,7 @@
 
 Upon execution of the project, the missing script invokes an adb shell command. The phone used OnePlusX wasn't detected by adb, hence the commands issued by the [missing script](https://github.com/wesleyvanderlee/Thesis/blob/master/Literature/BSc.%20FSM%20Learner/make_dump.sh) fail.
 
-The phone was set up with the following instructions: http://bernaerts.dyndns.org/android/339-android-oneplustwo-oneplusx-enable-adb-mtp-detection-ubuntu-trusty. Website was a slow load. Downloaded the website [here](https://github.com/wesleyvanderlee/Thesis/blob/master/Literature/BSc.%20FSM%20Learner/sources/web1) to be sure.
+The phone was set up with the following instructions: http://bernaerts.dyndns.org/android/339-android-oneplustwo-oneplusx-enable-adb-mtp-detection-ubuntu-trusty. Website was a slow load. Downloaded the website [here](https://github.com/wesleyvanderlee/Thesis/blob/master/Literature/BSc.%20FSM%20Learner/sources/OnePlus Two & OnePlus X - Enable ADB and MTP under Ubuntu.pdf) to be sure.
 
 After following the article and unlocking the device, the device could be recognized:
 `wesley@ubuntu:~$ adb devices
