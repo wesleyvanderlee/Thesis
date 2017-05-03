@@ -1,0 +1,1394 @@
+wesley@ubuntu:~/bs/fsm-learner$ mvn exec:java -Dexec.mainClass="com.bunq.main.Main" -Dexec.args="learn"
+[INFO] Scanning for projects...
+[WARNING]
+[WARNING] Some problems were encountered while building the effective model for com.bunq.learnlib:fsm-learner:jar:1.0-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 220, column 15
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 203, column 13
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 208, column 13
+[WARNING] 'build.plugins.plugin.version' for com.atlassian.maven.plugins:maven-clover2-plugin is missing. @ line 185, column 15
+[WARNING]
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING]
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING]
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building fsm-learner 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- exec-maven-plugin:1.6.0:java (default-cli) @ fsm-learner ---
+You are using the following settings. If this is correct, you do not have to do anything. If they are not correct, please alter your config files.
+os                        = android
+alphabetFile              = 92
+resetMethod               = null
+dumpFileExtension         = .xml
+learningAlgorithm         = lstar
+Are these your settings (y/n)?
+y
+Thank you.
+Start Learning Process
+FSMTeacher Booted.
+Start teaching.
+Capabilities [{appPackage=nl.negentwee, appActivity=nl.negentwee.activities.StartupActivity, noReset=false, newCommandTimeout=100, platformVersion=6.0.1, deviceName=OnePlus X}]
+Finished Driving
+Apr 28, 2017 5:47:12 AM de.learnlib.logging.LearnLogger logPhase
+INFO: Starting round 1
+Apr 28, 2017 5:47:12 AM de.learnlib.logging.LearnLogger logPhase
+INFO: Learning
+New query starts now.
+Executed query: Can't invocate target: null
+New query starts now.
+Executed query: 0-OK
+New query starts now.
+Executed query: 1-NOTFOUND
+New query starts now.
+Executed query: 1-NOTFOUND
+New query starts now.
+Executed query: 1-NOTFOUND
+New query starts now.
+Executed query: Can't invocate target: null
+New query starts now.
+Executed query: Can't invocate target: null
+New query starts now.
+Executed query: 1-NOTFOUND
+New query starts now.
+Executed query: 1-NOTFOUND
+New query starts now.
+Executed query: 1-NOTFOUND
+New query starts now.
+Executed query: 1-NOTFOUND
+New query starts now.
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: 0-OK
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: 0-OK
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 0-OK
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 0-OK
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 0-OK
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 0-OK
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: 0-OK
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: 0-OK
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 0-OK
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 0-OK
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 0-OK
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 0-OK
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: Can't invocate target: null
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+Apr 28, 2017 5:52:21 AM de.learnlib.logging.LearnLogger logModel
+INFO: net.automatalib.automata.transout.impl.compact.CompactMealy@6beeca6f
+Apr 28, 2017 5:52:21 AM de.learnlib.logging.LearnLogger logPhase
+INFO: Searching for counterexample
+New query starts now.
+Retrieved cached query: 1-NOTFOUND
+Retrieved cached query: 1-NOTFOUND
+New query starts now.
+Retrieved cached query: Can't invocate target: null
+Retrieved cached query: Can't invocate target: null
+Executed query: 1-NOTFOUND
+-------------------------------------------------------
+Learning [ms]: 309218, (309.218 s)
+Searching for counterexample [ms]: 3562, (3.562 s)
+
+rounds [#]: 1
+membership queries [resets]: 444
+States: 3
+Sigma: 12
+
+Model:
+digraph g {
+__start0 [label="" shape="none"];
+
+	s0 [shape="circle" label="0"];
+	s1 [shape="circle" label="1"];
+	s2 [shape="circle" label="2"];
+	s0 -> s1 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.widget.HorizontalScrollView[1][@index='1' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.app.ActionBar$Tab[3][@index='2' and @resource-id='' and contains(@text, '') and @content-desc='']#270#144 / Can't invocate target: null"];
+	s0 -> s1 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[3][@index='2' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.RelativeLayout[1][@index='0' and @resource-id='nl.negentwee:id/row_button_From' and contains(@text, '') and @content-desc='']#960#147 / 0-OK"];
+	s0 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[7][@index='6' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='nl.negentwee:id/row_button_When' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='nl.negentwee:id/row' and contains(@text, '') and @content-desc='']#960#141 / 1-NOTFOUND"];
+	s0 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.view.ViewGroup[1][@index='0' and @resource-id='android:id/action_bar' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[2][@index='2' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ImageButton[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='Meer opties']#168#144 / 1-NOTFOUND"];
+	s0 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[5][@index='4' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.RelativeLayout[1][@index='0' and @resource-id='nl.negentwee:id/row_button_To' and contains(@text, '') and @content-desc='']/android.widget.ImageView[1][@index='2' and @resource-id='nl.negentwee:id/extraCommand' and contains(@text, '') and @content-desc='Wissel Van en Naar locaties.']#147#147 / 1-NOTFOUND"];
+	s0 -> s1 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.widget.HorizontalScrollView[1][@index='1' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.app.ActionBar$Tab[2][@index='1' and @resource-id='' and contains(@text, '') and @content-desc='']#270#144 / Can't invocate target: null"];
+	s0 -> s1 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.widget.HorizontalScrollView[1][@index='1' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.app.ActionBar$Tab[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']#270#144 / Can't invocate target: null"];
+	s0 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.view.ViewGroup[1][@index='0' and @resource-id='android:id/action_bar' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']#120#144 / 1-NOTFOUND"];
+	s0 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[5][@index='4' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.RelativeLayout[1][@index='0' and @resource-id='nl.negentwee:id/row_button_To' and contains(@text, '') and @content-desc='']#960#147 / 1-NOTFOUND"];
+	s0 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[9][@index='8' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.Button[1][@index='0' and @resource-id='nl.negentwee:id/planJourney_button' and contains(@text, 'Plan je reis') and @content-desc='']#840#120 / 1-NOTFOUND"];
+	s0 -> s2 [label="check%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[10][@index='9' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ToggleButton[1][@index='0' and @resource-id='nl.negentwee:id/toggleOptions_button' and contains(@text, 'extra reisopties') and @content-desc='']#960#171 / 1-NOTFOUND"];
+	s0 -> s1 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.widget.HorizontalScrollView[1][@index='1' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.app.ActionBar$Tab[4][@index='3' and @resource-id='' and contains(@text, '') and @content-desc='']#270#144 / Can't invocate target: null"];
+	s1 -> s1 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.widget.HorizontalScrollView[1][@index='1' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.app.ActionBar$Tab[3][@index='2' and @resource-id='' and contains(@text, '') and @content-desc='']#270#144 / Can't invocate target: null"];
+	s1 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[3][@index='2' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.RelativeLayout[1][@index='0' and @resource-id='nl.negentwee:id/row_button_From' and contains(@text, '') and @content-desc='']#960#147 / 1-NOTFOUND"];
+	s1 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[7][@index='6' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='nl.negentwee:id/row_button_When' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='nl.negentwee:id/row' and contains(@text, '') and @content-desc='']#960#141 / 1-NOTFOUND"];
+	s1 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.view.ViewGroup[1][@index='0' and @resource-id='android:id/action_bar' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[2][@index='2' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ImageButton[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='Meer opties']#168#144 / 1-NOTFOUND"];
+	s1 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[5][@index='4' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.RelativeLayout[1][@index='0' and @resource-id='nl.negentwee:id/row_button_To' and contains(@text, '') and @content-desc='']/android.widget.ImageView[1][@index='2' and @resource-id='nl.negentwee:id/extraCommand' and contains(@text, '') and @content-desc='Wissel Van en Naar locaties.']#147#147 / 1-NOTFOUND"];
+	s1 -> s1 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.widget.HorizontalScrollView[1][@index='1' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.app.ActionBar$Tab[2][@index='1' and @resource-id='' and contains(@text, '') and @content-desc='']#270#144 / Can't invocate target: null"];
+	s1 -> s1 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.widget.HorizontalScrollView[1][@index='1' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.app.ActionBar$Tab[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']#270#144 / Can't invocate target: null"];
+	s1 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.view.ViewGroup[1][@index='0' and @resource-id='android:id/action_bar' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']#120#144 / 1-NOTFOUND"];
+	s1 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[5][@index='4' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.RelativeLayout[1][@index='0' and @resource-id='nl.negentwee:id/row_button_To' and contains(@text, '') and @content-desc='']#960#147 / 1-NOTFOUND"];
+	s1 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[9][@index='8' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.Button[1][@index='0' and @resource-id='nl.negentwee:id/planJourney_button' and contains(@text, 'Plan je reis') and @content-desc='']#840#120 / 1-NOTFOUND"];
+	s1 -> s2 [label="check%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[10][@index='9' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ToggleButton[1][@index='0' and @resource-id='nl.negentwee:id/toggleOptions_button' and contains(@text, 'extra reisopties') and @content-desc='']#960#171 / 1-NOTFOUND"];
+	s1 -> s1 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.widget.HorizontalScrollView[1][@index='1' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.app.ActionBar$Tab[4][@index='3' and @resource-id='' and contains(@text, '') and @content-desc='']#270#144 / Can't invocate target: null"];
+	s2 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.widget.HorizontalScrollView[1][@index='1' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.app.ActionBar$Tab[3][@index='2' and @resource-id='' and contains(@text, '') and @content-desc='']#270#144 / 1-NOTFOUND"];
+	s2 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[3][@index='2' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.RelativeLayout[1][@index='0' and @resource-id='nl.negentwee:id/row_button_From' and contains(@text, '') and @content-desc='']#960#147 / 1-NOTFOUND"];
+	s2 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[7][@index='6' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='nl.negentwee:id/row_button_When' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='nl.negentwee:id/row' and contains(@text, '') and @content-desc='']#960#141 / 1-NOTFOUND"];
+	s2 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.view.ViewGroup[1][@index='0' and @resource-id='android:id/action_bar' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[2][@index='2' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ImageButton[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='Meer opties']#168#144 / 1-NOTFOUND"];
+	s2 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[5][@index='4' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.RelativeLayout[1][@index='0' and @resource-id='nl.negentwee:id/row_button_To' and contains(@text, '') and @content-desc='']/android.widget.ImageView[1][@index='2' and @resource-id='nl.negentwee:id/extraCommand' and contains(@text, '') and @content-desc='Wissel Van en Naar locaties.']#147#147 / 1-NOTFOUND"];
+	s2 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.widget.HorizontalScrollView[1][@index='1' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.app.ActionBar$Tab[2][@index='1' and @resource-id='' and contains(@text, '') and @content-desc='']#270#144 / 1-NOTFOUND"];
+	s2 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.widget.HorizontalScrollView[1][@index='1' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.app.ActionBar$Tab[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']#270#144 / 1-NOTFOUND"];
+	s2 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.view.ViewGroup[1][@index='0' and @resource-id='android:id/action_bar' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']#120#144 / 1-NOTFOUND"];
+	s2 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[5][@index='4' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.RelativeLayout[1][@index='0' and @resource-id='nl.negentwee:id/row_button_To' and contains(@text, '') and @content-desc='']#960#147 / 1-NOTFOUND"];
+	s2 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[9][@index='8' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.Button[1][@index='0' and @resource-id='nl.negentwee:id/planJourney_button' and contains(@text, 'Plan je reis') and @content-desc='']#840#120 / 1-NOTFOUND"];
+	s2 -> s2 [label="check%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[10][@index='9' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ToggleButton[1][@index='0' and @resource-id='nl.negentwee:id/toggleOptions_button' and contains(@text, 'extra reisopties') and @content-desc='']#960#171 / 1-NOTFOUND"];
+	s2 -> s2 [label="push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='android:id/action_bar_container' and contains(@text, '') and @content-desc='']/android.widget.HorizontalScrollView[1][@index='1' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.app.ActionBar$Tab[4][@index='3' and @resource-id='' and contains(@text, '') and @content-desc='']#270#144 / 1-NOTFOUND"];
+
+__start0 -> s0;
+}
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 05:35 min
+[INFO] Finished at: 2017-04-28T05:52:26-07:00
+[INFO] Final Memory: 18M/98M
+[INFO] ------------------------------------------------------------------------

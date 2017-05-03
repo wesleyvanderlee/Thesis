@@ -129,3 +129,38 @@ Driver info: driver.version: AndroidDriver
 	at java.lang.Thread.run(Thread.java:745)
 ```
 After an insane amount of Googling and discussing the stack trace with other people, one can derive that Selenium cannot send HTTP requests to the AndroidDriver because the ProtocolHandshake continuously fails. This is due to the fact that Guava 21.0 (which has just been set) and Appium's java-client 2.1.0 are incompatible in terms of HTTP session establishment, which was the root cause for the failing ProtocolHandshake. Updating Appium's dependency configuration to the latest version: 5.0.0-BETA7, overcame the problem. No stable Appium version (latest stable is Appium 4.1.2) was able to make a successful handshake.
+
+## Modify for own class
+
+In order to modify the source code to learn the state machine model for another application, several functionalities had to be altered.
+
+The `login()` method is used by different methods like the reset methods and after the AndroidDriver is started. Since this login function is very specific to the Bunq application and not many applications require a login screen, the login-functionality is overwritten by overriding the login-function as follows:
+```java
+/**
+ * Does not login the user. Functions as a mock-up.
+ */
+public String login(String pin) {
+  return "logged_in";
+}
+```
+
+
+### configuration
+androidConfig.properties contain `appPackage=com.bunq.android` and `appActivity=com.bunq.android.ui.activity.MainActivity`. For this example, the 9292 app is learned.
+
+The following steps take care of the information:
+```bash
+wesley@ubuntu:~/Desktop$ adb shell pm path nl.negentwee
+package:/data/app/nl.negentwee-1/base.apk
+wesley@ubuntu:~/Desktop$ adb pull /data/app/nl.negentwee-1/base.apk .
+893 KB/s (4766922 bytes in 5.212s)
+wesley@ubuntu:~/Desktop$ ls
+base.apk
+wesley@ubuntu:~/Desktop$ mv base.apk 9292.apk
+wesley@ubuntu:~/Desktop$ ls
+9292.apk
+wesley@ubuntu:~/Desktop$ aapt dump badging 9292.apk | grep launchable-activity
+launchable-activity: name='nl.negentwee.activities.StartupActivity'  label='9292' icon=''
+```
+
+This gives the following information: appPackage=nl.negentwee` and `appActivity=nl.negentwee.activities.StartupActivity`
