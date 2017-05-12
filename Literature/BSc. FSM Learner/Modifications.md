@@ -263,3 +263,4 @@ Exploring state 1 constitutes with the menu after pressing the 'From' button on 
 The eventual time for learning the 'From'-part of the application took a total time of 01:13 hours! The results look as follows:
 
 ![alt text](./run1205-4.png "Run on From Menu from 9292 app")
+The FSM logs that accompany the FSM image can be found [here](https://raw.githubusercontent.com/wesleyvanderlee/Thesis/master/Literature/BSc.%20FSM%20Learner/runs/run1205-4).
