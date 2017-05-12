@@ -169,12 +169,19 @@ This gives the following information: appPackage=nl.negentwee` and `appActivity=
 ## Modifications for Correctness
 *12-5-2017*
 
-### Disable cache ###
+
 
 Inspecting the behavior of the first compiling run, one could see the following state machine:
 ![alt text](./run1205-1.png "Initial run on 9292 app")
 
-Each input from FSMTeacher is given to the SUL. This is processed in the following method: `SulAdapter.step`:
+As one could see there are three states: 0,1 and 2. State 2 is the `NOTFOUND` state. State 0 the initial menu and state 1 the menu where one can set the departing location. When learning the application, the 9292 app also shows to hang on state 1. All queries are performed from this state, result (obviously) in a `NOTFOUND`, causing the transition to state 2.
+**Problem:** The FSM is incorrect.
+**Hypothesis:** Learning from state 1 with all `NOTFOUND` transitions, cause the cache to contain all these query-answers. Hence these transitions are never learnt from state 0.
+**Possible Solution:** Disable the custom made cache.
+
+### Disable cache ###
+
+Each input from `FSMTeacher` is given to the SUL. This is processed in the following method: `SulAdapter.step`:
 ```java
 public String step(String in) {
   String output = "";
@@ -191,6 +198,7 @@ public String step(String in) {
   return output;
 }
 ```
+
 The application always wants to perform a cacheStep first. Changing the step method to only invoke `nonCacheStep`-method would bluntly disable the cache. Attempting to do so, during the learning phase, the following runtime error is thrown:
 ```bash
 An error occurred while executing 'learn'. The following error was given: net.automatalib.incremental.ConflictException: Error inserting push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[3][@index='2' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.RelativeLayout[1][@index='0' and @resource-id='nl.negentwee:id/row_button_From' and contains(@text, '') and @content-desc='']#960#147 / 1-NOTFOUND: Incompatible output symbols: 1-NOTFOUND vs 0-OK
@@ -223,3 +231,31 @@ Caused by: net.automatalib.incremental.ConflictException: Error inserting push%/
 	at com.bunq.main.Main.learn(Main.java:86)
 	... 12 more
 ```
+Dissecting the error shows that when performing the action `push%From` (simplified / to go to the menu of departures) the new output symbol is incompatible with the learnt output symbol. Looking how the graph looks with cache, the `push%From` results in the following transitions:
+`	s0 -> s1 [label="push-row_button_From- 0-OK"]; `
+` s1 -> s2 [label="push-row_button_From- 1-NOTFOUND"]; `
+Likely this is due to the fact that initially the query was cached, and without the cache, learning can't cope with different results for the same query. But why can't it cope with that, since they are clearly in a different state?
+Thought possibilities: going back is not in the alphabet? (reset does...). Possible commands from state 1 are not known! Create new alphabet from this state.
+The same happens when providing the alphabet available from state 1. First it goes to state 1, then to state 2, hanging there.
+
+[this](https://groups.google.com/forum/#!topic/learnlib-qa/iSEOvwsH3Cc) shows that it is probably due to an incorrect SUT reset function. To see how resetting is done, one must examine the function-calls while learning. The following section gives a small overview, and a discussion on how resetting is implemented:
+
+#### learning
+The following shows the learning cycle:
+```java
+FsmLearner learner = new FsmLearner();
+learner.setUpLearner();
+    loadAlphabet();  -> alphabet.add(line)
+    instantiateSuls(); -> new SulAdapter();
+learner.runExperiment(); -> experiment.run()
+    each query: pre() -> handlePreReset() && sendKeepAlive();
+    // handlePreReset sets option 'hardReset' to false, WHY? It won't set a reset anymore.
+    // sendKeepAlive is dependent per device setting: tries to not have the application go to black screen
+learner.printResults();
+```
+The class `SulAdapter` contains three boolean values: `softReset`, `semiSoftReset` and `hardReset`. Reading from the context follows that `hardReset` is the strongest one. It would therefor be the best case to use a `hardReset` when trying to make this work.
+As noted in the function-call analysis, the handlePreReset, handles all options before resetting, and after one reset, sets the `hardReset` to false after which a `hardReset` will never be performed anymore. This also accounts to the other reset types. Disabling the option of setting the `hardReset` to false immediately shows results, the application can now learn without the cache.
+
+### Exploring state 1 ###
+
+Exploring state 1 constitutes with the menu after pressing the 'From' button on the main screen of the 9292 application. Learning the state machine for this part dramatically increased in time. This is mainly due to the `hardReset` function that has to be executed each time. Restarting the application takes approximately 6 seconds for the 9292 app. Another factor that increases the learning time, is that it now also learns other states.
