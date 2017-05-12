@@ -165,5 +165,32 @@ launchable-activity: name='nl.negentwee.activities.StartupActivity'  label='9292
 
 This gives the following information: appPackage=nl.negentwee` and `appActivity=nl.negentwee.activities.StartupActivity`
 
+---
 ## Modifications for Correctness
 *12-5-2017*
+
+###Disable cache###
+
+Inspecting the behavior of the first compiling run, one could see the following state machine:
+![alt text](./run1205-1.png "Initial run on 9292 app")
+
+Each input from FSMTeacher is given to the SUL. This is processed in the following method: `SulAdapter.step`:
+```java
+public String step(String in) {
+  String output = "";
+  currentQuery = currentQuery.addWord(in);
+
+  try {
+    output = cacheStep();
+  } catch (QueryCacheMissException e) {
+    output = nonCacheStep();
+    currentQuery.addResult(output);
+    cache.addQuery(currentQuery);
+  }
+  updateFastForward(output);
+  return output;
+}
+```
+The application always wants to perform a cacheStep first. Changing the step method to only invoke `nonCacheStep`-method would bluntly disable the cache. Attempting to do so, during the learning phase, the following runtime error is thrown:
+```bash
+```
