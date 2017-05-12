@@ -169,7 +169,7 @@ This gives the following information: appPackage=nl.negentwee` and `appActivity=
 ## Modifications for Correctness
 *12-5-2017*
 
-###Disable cache###
+### Disable cache ###
 
 Inspecting the behavior of the first compiling run, one could see the following state machine:
 ![alt text](./run1205-1.png "Initial run on 9292 app")
@@ -193,4 +193,33 @@ public String step(String in) {
 ```
 The application always wants to perform a cacheStep first. Changing the step method to only invoke `nonCacheStep`-method would bluntly disable the cache. Attempting to do so, during the learning phase, the following runtime error is thrown:
 ```bash
+An error occurred while executing 'learn'. The following error was given: net.automatalib.incremental.ConflictException: Error inserting push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[3][@index='2' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.RelativeLayout[1][@index='0' and @resource-id='nl.negentwee:id/row_button_From' and contains(@text, '') and @content-desc='']#960#147 / 1-NOTFOUND: Incompatible output symbols: 1-NOTFOUND vs 0-OK
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.bunq.main.Main.execute(Main.java:247)
+	at com.bunq.main.Main.main(Main.java:318)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:282)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: net.automatalib.incremental.ConflictException: Error inserting push%//android.view.ViewGroup[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.ScrollView[1][@index='1' and @resource-id='nl.negentwee:id/planner_scrollable_content' and contains(@text, '') and @content-desc='']/android.widget.LinearLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='nl.negentwee:id/planner_table' and contains(@text, '') and @content-desc='']/android.widget.TableRow[3][@index='2' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.RelativeLayout[1][@index='0' and @resource-id='nl.negentwee:id/row_button_From' and contains(@text, '') and @content-desc='']#960#147 / 1-NOTFOUND: Incompatible output symbols: 1-NOTFOUND vs 0-OK
+	at net.automatalib.incremental.mealy.dag.IncrementalMealyDAGBuilder.insert(IncrementalMealyDAGBuilder.java:284)
+	at de.learnlib.cache.sul.SULCache$SULCacheImpl.post(SULCache.java:146)
+	at de.learnlib.cache.sul.SULCache.post(SULCache.java:224)
+	at de.learnlib.oracles.SULOracle.answerQuery(SULOracle.java:104)
+	at de.learnlib.oracles.SULOracle.processQueries(SULOracle.java:81)
+	at de.learnlib.oracles.SULOracle.processQueries(SULOracle.java:74)
+	at de.learnlib.algorithms.lstargeneric.table.ObservationTable.initialize(ObservationTable.java:185)
+	at de.learnlib.algorithms.lstargeneric.AbstractLStar.startLearning(AbstractLStar.java:77)
+	at de.learnlib.algorithms.lstargeneric.AbstractAutomatonLStar.startLearning(AbstractAutomatonLStar.java:185)
+	at de.learnlib.experiments.Experiment$ExperimentImpl.run(Experiment.java:76)
+	at de.learnlib.experiments.Experiment.run(Experiment.java:130)
+	at com.bunq.learner.FsmLearner.runExperiment(FsmLearner.java:225)
+	at com.bunq.main.Main.learn(Main.java:86)
+	... 12 more
 ```
