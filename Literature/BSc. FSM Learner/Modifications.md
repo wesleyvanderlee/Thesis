@@ -164,3 +164,6 @@ launchable-activity: name='nl.negentwee.activities.StartupActivity'  label='9292
 ```
 
 This gives the following information: appPackage=nl.negentwee` and `appActivity=nl.negentwee.activities.StartupActivity`
+
+## Modifications for Correctness
+*12-5-2017*
