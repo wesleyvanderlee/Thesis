@@ -173,7 +173,7 @@ This gives the following information: appPackage=nl.negentwee` and `appActivity=
 
 Inspecting the behavior of the first compiling run, one could see the following state machine:
 ![alt text](./run1205-1.png "Initial run on 9292 app")
-
+This run was only run with the alphabet action push%row_button_From
 As one could see there are three states: 0,1 and 2. State 2 is the `NOTFOUND` state. State 0 the initial menu and state 1 the menu where one can set the departing location. When learning the application, the 9292 app also shows to hang on state 1. All queries are performed from this state, result (obviously) in a `NOTFOUND`, causing the transition to state 2.
 **Problem:** The FSM is incorrect.
 **Hypothesis:** Learning from state 1 with all `NOTFOUND` transitions, cause the cache to contain all these query-answers. Hence these transitions are never learnt from state 0.
@@ -259,3 +259,7 @@ As noted in the function-call analysis, the handlePreReset, handles all options 
 ### Exploring state 1 ###
 
 Exploring state 1 constitutes with the menu after pressing the 'From' button on the main screen of the 9292 application. Learning the state machine for this part dramatically increased in time. This is mainly due to the `hardReset` function that has to be executed each time. Restarting the application takes approximately 6 seconds for the 9292 app. Another factor that increases the learning time, is that it now also learns other states.
+
+The eventual time for learning the 'From'-part of the application took a total time of 01:13 hours! The results look as follows:
+
+![alt text](./run1205-4.png "Run on From Menu from 9292 app")
