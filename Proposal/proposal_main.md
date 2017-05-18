@@ -1,17 +1,17 @@
 # Research Proposal
 
 # Introduction
-Android applications can be found everywhere, ranging from mobile phones to smart televisions and -ovens. Programming these applications is a task prone to errors, as bugs and vulnerabilities lurk around the corner. The impact of these bugs and vulnerabilities can range from application downtime, i.e. crashes, to the compromise of information or the system itself. Aiding the process of identifying these bugs and vulnerabilities, comes application model inference in a black box manner.
-Model inference has proven to be a valuable asset in the field of protocol conformance testing of various implementation, such as TLS implementations [1] or the behavior of the Dutch Biometric Passport Chip [2]. To a limited extend, model inference has been applied to mobile applications [3]. The applied techniques are however in some cases circuitous and resulted in a learning-wise time expensive algorithm.
+Android applications can be found everywhere, ranging from mobile phones to smart televisions and -ovens. Programming these applications is a task prone to errors, as bugs and vulnerabilities continuously lurk around the corner. The impact of these bugs and vulnerabilities can range from application downtime, i.e. crashes, to the compromise of information or the system itself. Aiding the process of identifying these bugs and vulnerabilities, come state of the art testing techniques such as application model inference in a black box manner.
+Model inference deals with modeling the behavior of a System Under Test (SUT) in the form of an automaton. The automaton gives a graphical overview of the SUT's logic, which can be used as a new source to identify bugs and vulnerabilities in the system. Model inference has proven to be a valuable asset in the field of protocol conformance testing of various implementation, such as TLS implementations [1] or the behavior of the Dutch Biometric Passport Chip [2]. To a limited extend, model inference has been applied to mobile applications [3]. The applied techniques are however in some cases circuitous and resulted in a learning-wise time expensive algorithm.
 
 ## Relevant Research
 See the documentation [here](Literature/README.md).
 
 ## Research Questions
 
-+ RQ1: How can we apply state machine learning to mobile applications?
++ RQ1: How can we best apply state machine learning to mobile applications?
 
-+ RQ2: How can we best combine fuzzing and machine learning to hypothesize a functional state machine diagram?
++ RQ2: How can we best combine fuzzing and machine learning to infer a model?
 
 + RQ3: How can we apply fuzzing and learning on Android applications in a time-feasible way?
 
@@ -36,11 +36,12 @@ EMMA needs to be configured into the application's manifest, in order to enable 
 Using speed-up mechanisms.
 	Smarter learning algorithm.
 	Fuzz- and test-case selection, etc.
+	Design choices for interaction.
 
 ## Methodology
-A process for inferring state machines of Android applications shall be developed and a proof of concept tool shall be developed accordingly. The process and the tool must adhere to a 'smart' learning process, meaning the process adheres to the correctness and time-feasibility requirements. The research project refines to the following research tasks:
+A process for inferring state machines of Android applications will be developed and a proof of concept tool shall be developed accordingly. The process and the tool must adhere to a 'smart' learning process, meaning the process adheres to the correctness and time-feasibility requirements. The research project refines to the following research tasks:
 	1. Understand model learning algorithms and diverse fuzzing techniques. Also depict different applications of model learning.
-	2. Consider how 1 can be applied to the mobile testing environment.
+	2. Consider how 1. can be applied to the mobile testing environment.
 	3. Define use cases for model learning to the cyber security domain.
 	4. Establish the process like depicted in Figure 1.
 	4. Implement the process to a proof-of-concept.
