@@ -299,3 +299,8 @@ Caused by: net.automatalib.incremental.ConflictException: Error inserting push%/
 	at com.bunq.main.Main.learn(Main.java:86)
 	... 12 more
 ```
+From the stack trace, one can deduce that learning fails because for some action from some state, different output symbols have been thrown: `Incompatible output symbols: 1-NOTFOUND vs 0-OK`. The output `1-NOTFOUND` has been returned, while the same word initially discovered `0-OK` as an output. LearnLib then decides that the hypothesized automata contains non-deterministic behavior, after which LearnLib will throw an Error. During debugging, I discovered that delaying the `SulAdapter.step` method, omits this error. The reason for this behavior is as follows: During debugging I inserted a method that debugs certain output to a file, which is a relatively time-consumable action for Java. This causes the application to reset and start-up fully. The application in itself is deterministic, thus the Error thrown by LearnLib is practically valid, and the `1-NOTFOUND` should not have occurred. Hence I believe that the UI element could not have been found, because the application was not loaded fully, thus delaying the method `SulAdapter.step` omits this.
+
+Realizing the above and leaving the delay where it is, the larger state machine can be learned and looks as follows:
+
+![alt text](./run2405-1.png "Final run on 9292 app")
