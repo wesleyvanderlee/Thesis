@@ -17,32 +17,9 @@ See the documentation [here](Literature/README.md).
 			- Can the observation table be prefilled with valid information?
 					- Maybe from an event-tree.
 
-#### RQ1
-How to define a state (UI-wise)?
-	+ I.e. scrape frames, links, etc. Based on layout alone?
-	+ How does this follow from the relevant literature?
-How to define equivalence (in case of dynamic representation), some scrape the UI-a-hrefs. Depends on how the state is defined.
-
-#### RQ2
-Leads to the following model:
-
-![Proposal Setup Diagram](https://github.com/wesleyvanderlee/Thesis/blob/master/Proposal/Proposal%20Setup.png)
-
-Figure 1.
-
-EMMA needs to be configured into the application's manifest, in order to enable the code coverage function based on app behavior. From two perspectives this may be possible, during:
-	+ app development.
-	+ app decompile, change the manifest, recompile.
-
-#### RQ3
-Using speed-up mechanisms.
-	Smarter learning algorithm.
-	Fuzz- and test-case selection, etc.
-	Design choices for interaction.
-
 ## Methodology
 A process for inferring state machines of Android applications will be developed and a proof of concept tool shall be developed accordingly. The process and the tool must adhere to a 'smart' learning process, meaning the process adheres to the correctness and time-feasibility requirements. The research project refines to the following research tasks:
-	1. Understand model learning algorithms and diverse fuzzing techniques. Also depict different applications of model learning.
+	1. Understand model learning algorithms. Also depict different applications of model learning.
 	2. Consider how 1. can be applied to the mobile testing environment.
 	3. Define use cases for model learning to the cyber security domain.
 	4. Establish the process like depicted in Figure 1.
