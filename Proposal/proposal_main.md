@@ -9,11 +9,13 @@ See the documentation [here](Literature/README.md).
 
 ## Research Questions
 
-+ RQ1: How can we best apply state machine learning to mobile applications?
-
-+ RQ2: How can we best combine fuzzing and machine learning to infer a model?
-
-+ RQ3: How can we apply fuzzing and learning on Android applications in a time-feasible way?
++ RQ1: How can we effectively learn and model mobile applications?
+			- How are states defined in mobile applications?
+			- How to define a complete alphabet in mobile applications?
++ RQ2: How can we improve the feasibility of application model inference.
+			- Can hard resetting be substituted by miscellaneous actions?
+			- Can the observation table be prefilled with valid information?
+					- Maybe from an event-tree.
 
 #### RQ1
 How to define a state (UI-wise)?

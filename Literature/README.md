@@ -11,6 +11,7 @@ The following literature has been read:
 7. [Vaandrager, Frits. "Model learning." Communications of the ACM 60.2 (2017): 86-95.](#literature7)
 8. [Choi, Wontae, George Necula, and Koushik Sen. "Guided gui testing of android apps with minimal restart and approximate learning." ACM SIGPLAN Notices. Vol. 48. No. 10. ACM, 2013.](#literature8)
 9. [Angluin, Dana. "Learning regular sets from queries and counterexamples." Information and computation 75.2 (1987): 87-106.](#literature9)
+10. [Isberner, Malte, Falk Howar, and Bernhard Steffen. "The TTT Algorithm: A Redundancy-Free Approach to Active Automata Learning." RV. 2014.](#literature10)
 
 ### Summaries
 
@@ -57,7 +58,20 @@ This paper identifies key properties used to interpret automata and proposes a m
 _Status: Yet to summarize_
 
 ####  <a id="literature8"></a> 8. Guided gui testing of android apps with minimal restart and approximate learning
-_Status: Yet to read_
+Choi, Wontae, George Necula, and Koushik Sen. "Guided gui testing of android apps with minimal restart and approximate learning." ACM SIGPLAN Notices. Vol. 48. No. 10. ACM, 2013.
 
-####  <a id="literature9"></a> 9. Learning regular sets from queries and counterexamples
-_Status: Yet to summarize_
+The paper considers the problem of automatically generating sequences of test inputs for Android apps for wich they don't have an existing model of the GIU. Goal: Achieve code coverage quickly by learning and exploring an abstraction of the model of the GUI of the app. . Currently,
+our implementation waits for up to 5 seconds after sending a user input, to ensure that all handlers have finished.
+Algorithm based on two observations:
+  1. is it possible to reduce the use of app restarts.
+  2. need an approximation
+
+#### <a id="literature9"></a> 9. Learning regular sets from queries and counterexamples.
+Angluin, Dana. "Learning regular sets from queries and counterexamples." Information and computation 75.2 (1987): 87-106.
+
+L* Everywhere
+
+#### <a id="literature10"></a> 10. The TTT Algorithm: A Redundancy-Free Approach to Active Automata Learning.
+Isberner, Malte, Falk Howar, and Bernhard Steffen. "The TTT Algorithm: A Redundancy-Free Approach to Active Automata Learning." RV. 2014.
+
+TTT Everywhere
