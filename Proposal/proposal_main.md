@@ -59,9 +59,9 @@ Validate Metrics:
 + Assert the tool on available applications (i.e. from Play Store)
 	Start: 14 October; End: 30 October
 
-** Report **
-[] Finalize report and create final presentation
-	Start: 1 November; End: 30 November
+**Report**
++ Finalize report and create final presentation
+	- Start: 1 November; End: 30 November
 
 
 
