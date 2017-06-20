@@ -8,67 +8,7 @@ Model inference deals with modeling the behavior of a System Under Test (SUT) in
 See the documentation [here](Literature/README.md).
 
 ## Research Questions
-Main research question:
-> Can one identify weaknesses in Android applications through behavioral model learning?
 
-This can be decomposed into the three following sub research questions.
-
-+ RQ1: How can one extent model learning to be applicable to mobile applications?
-  - How to deal with mobile parameters (i.e. loss of Internet connectivity)
-	- How are states defined in mobile applications?
-	- How to define a complete alphabet in mobile applications?
-		- Input: more than only buttons in the application.
-
-+ RQ2: How can we improve the feasibility of mobile application learning.
-	- Can hard resetting be substituted by miscellaneous actions?
-	- Can the observation table be prefilled with valid information?
-			- From fuzzers for buggy states?
-			- From an event-tree for normal use completeness.
-
-+ RQ3: How can the learned model be used to assess the application's security?
-	- How can weaknesses be identified from the model?
-    - What type of mobile application vulnerabilities exist and how does their presence show in a model?
-    - How can the model be enriched to further assess the security?
-
-
-
-## Planning
-** RQ1 **
-[] Be able to model applications based on GUI elements.
-	Start: 1 April; End: 30 June
-[] Extent the input and output alphabet and deal with learning errors.
-	Start: 1 July; End: 15 July
-
-** RQ2 **
-[] Increase time feasibility by adoption of: caching/event-filling/other smart techniques.
-	Start: 1 August; End: 31 August
-
-** RQ3 **
-[] Assess for a set of bugs and vulnerabilities if they can be identified in (enriched) graphs.
-	Start: 1 September; End: 7 September
-[] Formalize algorithms how they can be derived.
-	Start: 7 September; End: 30 September
-
-** Validation **
-Validate Correctness
-[] Create application that contains the vulnerabilities
-	Start: 1 October; End: 7 October
-[] Assert the tool on the application and assess results
-	Start: 7 October; End: 14 October
-Validate Metrics:
-[] Assert the tool on available applications (i.e. from Play Store)
-	Start: 14 October; End: 30 October
-
-** Report **
-[] Finalize report and create final presentation
-	Start: 1 November; End: 30 November
-
-
-
-
-
-############OLD########################
-///////////////////////////////////////
 + RQ1: How can we effectively learn and model mobile applications?
 			- How are states defined in mobile applications?
 			- How to define a complete alphabet in mobile applications?
@@ -77,12 +17,32 @@ Validate Metrics:
 			- Can the observation table be prefilled with valid information?
 					- Maybe from an event-tree.
 
-############OLD########################
-///////////////////////////////////////
+#### RQ1
+How to define a state (UI-wise)?
+	+ I.e. scrape frames, links, etc. Based on layout alone?
+	+ How does this follow from the relevant literature?
+How to define equivalence (in case of dynamic representation), some scrape the UI-a-hrefs. Depends on how the state is defined.
+
+#### RQ2
+Leads to the following model:
+
+![Proposal Setup Diagram](https://github.com/wesleyvanderlee/Thesis/blob/master/Proposal/Proposal%20Setup.png)
+
+Figure 1.
+
+EMMA needs to be configured into the application's manifest, in order to enable the code coverage function based on app behavior. From two perspectives this may be possible, during:
+	+ app development.
+	+ app decompile, change the manifest, recompile.
+
+#### RQ3
+Using speed-up mechanisms.
+	Smarter learning algorithm.
+	Fuzz- and test-case selection, etc.
+	Design choices for interaction.
 
 ## Methodology
 A process for inferring state machines of Android applications will be developed and a proof of concept tool shall be developed accordingly. The process and the tool must adhere to a 'smart' learning process, meaning the process adheres to the correctness and time-feasibility requirements. The research project refines to the following research tasks:
-	1. Understand model learning algorithms. Also depict different applications of model learning.
+	1. Understand model learning algorithms and diverse fuzzing techniques. Also depict different applications of model learning.
 	2. Consider how 1. can be applied to the mobile testing environment.
 	3. Define use cases for model learning to the cyber security domain.
 	4. Establish the process like depicted in Figure 1.
