@@ -9,7 +9,7 @@ See the documentation [here](Literature/README.md).
 
 ## Research Questions
 Main research question:
-* Can one identify weaknesses in Android applications through behavioral model learning? *
+*Can one identify weaknesses in Android applications through behavioral model learning?*
 
 This can be decomposed into the three following sub research questions.
 
