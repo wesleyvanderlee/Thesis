@@ -27,8 +27,8 @@ This can be decomposed into the three following sub research questions.
 
 + RQ3: How can the learned model be used to assess the application's security?
 	- How can weaknesses be identified from the model?
-    - What type of mobile application vulnerabilities exist and how does their presence show in a model?
-    - How can the model be enriched to further assess the security?
+      - What type of mobile application vulnerabilities exist and how does their presence show in a model?
+      - How can the model be enriched to further assess the security?
 
 
 
