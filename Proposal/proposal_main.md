@@ -33,30 +33,30 @@ This can be decomposed into the three following sub research questions.
 
 
 ## Planning
-** RQ1 **
-[] Be able to model applications based on GUI elements.
+**RQ1**
++ Be able to model applications based on GUI elements.
 	Start: 1 April; End: 30 June
-[] Extent the input and output alphabet and deal with learning errors.
++ Extent the input and output alphabet and deal with learning errors.
 	Start: 1 July; End: 15 July
 
-** RQ2 **
-[] Increase time feasibility by adoption of: caching/event-filling/other smart techniques.
+**RQ2**
++ Increase time feasibility by adoption of: caching/event-filling/other smart techniques.
 	Start: 1 August; End: 31 August
 
-** RQ3 **
-[] Assess for a set of bugs and vulnerabilities if they can be identified in (enriched) graphs.
+**RQ3**
++ Assess for a set of bugs and vulnerabilities if they can be identified in (enriched) graphs.
 	Start: 1 September; End: 7 September
-[] Formalize algorithms how they can be derived.
++ Formalize algorithms how they can be derived.
 	Start: 7 September; End: 30 September
 
-** Validation **
+**Validation**
 Validate Correctness
-[] Create application that contains the vulnerabilities
++ Create application that contains the vulnerabilities
 	Start: 1 October; End: 7 October
-[] Assert the tool on the application and assess results
++ Assert the tool on the application and assess results
 	Start: 7 October; End: 14 October
 Validate Metrics:
-[] Assert the tool on available applications (i.e. from Play Store)
++ Assert the tool on available applications (i.e. from Play Store)
 	Start: 14 October; End: 30 October
 
 ** Report **
