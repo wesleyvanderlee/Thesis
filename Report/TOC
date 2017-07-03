@@ -1,0 +1,39 @@
+1. Introduction
+  Use case/ why -> what is the thesis topic.
+  What -> what elements are used, where is this used more?
+  Research objectives
+  Main research question: Can one identify weaknesses in Android applications through feasible behavior model learning?
+  RQ1: How can one extend model learning to be applicable to mobile applications?
+  RQ2: How can one improve the feasibility of mobile application learning?
+  RQ3: How can the learned model be used to assess the application's security?
+
+2. Background and related work
+  Active learning
+    L-star
+    TTT
+    Speed and complexity of algorithms
+  Mobile security: weaknesses
+
+3. (RQ1) Mobile application modeling
+    Alphabet completeness
+    mobile parameters
+    definition of state
+
+4. (RQ2) Feasible learning
+    Learning algorithms
+    Action substitution
+    Event-tree in OT
+
+5. (RQ3) How can the learned model be used to assess the application's security?
+    What vulnerabilities can be identified in a model
+    Model enrichment
+    Detection algorithms
+
+6. Validation
+    correctness
+      From a self-made application
+      From a set of known vulnerable applications
+    Metrics
+      Time comparison
+
+6. Conclusion and Future Work
