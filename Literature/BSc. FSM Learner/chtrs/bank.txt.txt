@@ -1,0 +1,50 @@
+public CompactDFA generateCheater(){
+			String usernameInvalid = "enterText%//android.view.View[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableRow[3][@index='2' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.EditText[1][@index='0' and @resource-id='com.android.insecurebankv2:id/loginscreen_username' and contains(@text, 'Username') and @content-desc='']#960#216#Incorrect Username";
+			String passwordInvalid = "enterText%//android.view.View[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableRow[4][@index='3' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.EditText[1][@index='0' and @resource-id='com.android.insecurebankv2:id/loginscreen_password' and contains(@text, '') and @content-desc='']#960#216#Incorrect Password";
+			String usernameValid = "enterText%//android.view.View[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableRow[3][@index='2' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.EditText[1][@index='0' and @resource-id='com.android.insecurebankv2:id/loginscreen_username' and contains(@text, 'Username') and @content-desc='']#960#216#jack";
+			String passwordValid = "enterText%//android.view.View[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableRow[4][@index='3' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.EditText[1][@index='0' and @resource-id='com.android.insecurebankv2:id/loginscreen_password' and contains(@text, '') and @content-desc='']#960#216#Jack@123$";	
+			String login = "push%//android.view.View[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.RelativeLayout[1][@index='6' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.Button[1][@index='0' and @resource-id='com.android.insecurebankv2:id/login_button' and contains(@text, 'Sign In') and @content-desc='']#1050#144";
+			String transfer = "push%//android.view.View[1][@index='0' and @resource-id='android:id/decor_content_parent' and contains(@text, '') and @content-desc='']/android.widget.FrameLayout[2][@index='1' and @resource-id='android:id/content' and contains(@text, '') and @content-desc='']/android.widget.TableLayout[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.TableRow[1][@index='0' and @resource-id='' and contains(@text, '') and @content-desc='']/android.widget.Button[1][@index='0' and @resource-id='com.android.insecurebankv2:id/trf_button' and contains(@text, 'Transfer') and @content-desc='']#1050#241";
+		
+			
+			List<String> alpha = new ArrayList<String>();
+			alpha.add(usernameValid);
+			alpha.add(passwordValid);
+			alpha.add(usernameInvalid);
+			alpha.add(passwordInvalid);
+			alpha.add(login);
+			alpha.add(transfer);
+			
+			Alphabet<String> sigma = Alphabets.fromList(alpha);
+			
+
+			// @formatter:off
+			// create automaton
+			return AutomatonBuilders.newDFA(sigma)
+	                .withInitial("q0")
+	                .from("q0")
+	                    .on(usernameInvalid).to("q0")
+	                    .on(passwordInvalid).to("q0")
+	                    .on(login).to("q0")
+	                    .on(usernameValid).to("q1")
+	                    .on(passwordValid).to("q2")
+	                .from("q1")
+	                	.on(passwordValid).to("q3")
+	                	.on(login).to("q1")
+	                	.on(usernameValid).to("q1")
+	            	.from("q2")
+	                	.on(usernameValid).to("q3")
+	                    .on(login).to("q2")
+	                    .on(passwordValid).to("q2")
+	            	.from("q3")
+	            		.on(login).to("q4")
+	            	.from("q4")
+                    	.on(transfer).to("q5")
+	                .withAccepting("q0")
+	                .withAccepting("q1")
+	                .withAccepting("q2")
+	                .withAccepting("q3")
+	                .withAccepting("q4")
+	                .withAccepting("q5")
+	                .create();
+	}
